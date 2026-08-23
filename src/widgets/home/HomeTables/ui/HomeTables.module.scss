@@ -1,0 +1,15 @@
+@use '../../../../shared/styles/index.scss' as *;
+
+.container {
+	// @include shadow-default;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 20px;
+	border-radius: 0 8px 8px 8px;
+	border-width: 0.5px;
+	border-color: $color-gray-light;
+	border-style: solid;
+	gap: 20px;
+}

@@ -1,0 +1,17 @@
+@use '../../styles/index.scss' as *;
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+
+	&--active {
+		background-color: $color-gray-light;
+	}
+
+	&--inactive {
+		background-color: $color-gray-light;
+	}
+}

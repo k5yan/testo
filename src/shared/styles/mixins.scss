@@ -1,0 +1,22 @@
+@use './variables.scss' as *;
+
+@mixin text-regular {
+	font-family: Inter, sans-serif;
+	font-weight: $font-weight-regular;
+}
+
+@mixin text-medium {
+	font-family: Inter, sans-serif;
+	font-weight: $font-weight-medium;
+}
+
+@mixin text-bold {
+	font-family: Inter, sans-serif;
+	font-weight: $font-weight-bold;
+}
+
+//
+
+@mixin shadow-default {
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.07);
+}

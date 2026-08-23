@@ -1,0 +1,48 @@
+@use '../../../shared/styles/index.scss' as *;
+
+.container {
+	@include shadow-default;
+	display: flex;
+	height: 56px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $color-white;
+	padding: 0 4px 0 20px;
+}
+
+.navigator {
+	display: flex;
+	height: 100%;
+	// align-items: center;
+	gap: clamp(10px, 3vw, 40px);
+}
+
+.headerButtons {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	gap: clamp(5px, 1vw, 20px);
+	z-index: 2;
+}
+
+.headerButtonContainer {
+	@include shadow-default;
+}
+
+.iconCircleContainer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 8px 8px 40px;
+	gap: 8px;
+}

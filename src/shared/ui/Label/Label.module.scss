@@ -1,0 +1,16 @@
+@use '../../../shared/styles/index.scss' as *;
+
+.labelStyle {
+	white-space: nowrap;
+	&--regular {
+		@include text-regular;
+	}
+
+	&--medium {
+		@include text-medium;
+	}
+
+	&--bold {
+		@include text-bold;
+	}
+}

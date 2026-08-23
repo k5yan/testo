@@ -1,0 +1,9 @@
+@use './fonts.css';
+@use './variables.scss';
+
+body {
+	margin: 0;
+	font-family: 'Inter', -apple-system, sans-serif;
+	font-weight: 400;
+	height: 100%;
+}
