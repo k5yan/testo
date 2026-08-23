@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import { routeConfig } from './routing/routesConfig';
 import { Header } from '../widgets/header';
 
 const App: React.FC = () => {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
 				<main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
 					<Header />
@@ -16,7 +16,7 @@ const App: React.FC = () => {
 					</Routes>
 				</main>
 			</div>
-		</BrowserRouter>
+		</HashRouter>
 	);
 };
 

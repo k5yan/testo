@@ -7,7 +7,7 @@ import path from 'path';
 export default defineConfig({
 	plugins: [react(), svgr()],
 	root: '.',
-	base: '/testo/',
+	base: '/testo',
 	resolve: {
 		alias: {
 			'@': path.resolve(import.meta.dirname, './src'),
