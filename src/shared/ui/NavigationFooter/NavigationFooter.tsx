@@ -1,6 +1,5 @@
 import type React from 'react';
 import type { NavigationFooterProps } from './types';
-import styles from './NavigationFooter.module.scss';
 import { Button } from '../Button';
 import { COLORS } from '../../constants/theme';
 import { Label } from '../Label';

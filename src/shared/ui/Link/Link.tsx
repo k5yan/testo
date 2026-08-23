@@ -1,7 +1,7 @@
 import React from 'react';
 ``;
 import { NavLink } from 'react-router-dom';
-import { ROUTES } from '@/shared/constants';
+import { ROUTES } from '../../constants';
 import type { LinkComponentProps } from './types';
 import styles from './Link.module.scss';
 import { Label } from '../Label';

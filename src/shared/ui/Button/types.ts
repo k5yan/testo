@@ -1,5 +1,4 @@
 import type { ReactNode, CSSProperties } from 'react';
-import type { COLORS } from '../../constants/theme';
 import type { IconProps } from '../Icon/types';
 import type { LabelProps } from '../Label/types';
 

@@ -10,8 +10,8 @@ export const Selector: React.FC<SelectorProps> = ({
 	value = '',
 	label = null,
 	placeholder = 'Выбрать',
-	setValue = () => {},
-	data = [],
+	// setValue = () => {},
+	// data = [],
 }) => {
 	const [dataVisible, setDataVisible] = useState<boolean>(false);
 	const toggleDataVisibility = (): void => {

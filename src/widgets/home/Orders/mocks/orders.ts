@@ -20,7 +20,7 @@ export const ordersMock: Array<Order> = [
 	{
 		order_num: '00002',
 		dateStart: '2024-01-01T12:40:00+03:00',
-		dateEnd: '2024-07-27T12:00:00+03:00',
+		dateEnd: '',
 		company: 'ИП Иванов Иван Иванович',
 		partner: 'ООО “Название компании”',
 		delivery_num: '123123123123123',

@@ -7,7 +7,7 @@ import type { TabProps } from '../../../shared/ui/Tab/types';
 import { JoyrideTooltip } from '../../../shared/ui/JoyrideTooltip';
 
 export const HomePage: React.FC = () => {
-	const [activeTabId, setActiveTabId] = useState<string>();
+	const [activeTabId, setActiveTabId] = useState<string>('');
 	const handleTabPress = (tabId: TabProps['id']): void => {
 		setActiveTabId(tabId);
 	};
@@ -46,9 +46,8 @@ export const HomePage: React.FC = () => {
 	});
 
 	useEffect(() => {
-		if (on) {
-			controls.start();
-		}
+		controls.start();
+
 		return on('tour:end', () => {
 			console.log('Tour finished!');
 		});

@@ -7,7 +7,7 @@ const normalize = (val: string, expectedLength: number): string => {
 	} else return val;
 };
 
-export const getDateAndTimeFromIso = ({ iso, utc = true }: { iso: string; utc?: boolean }): [Date, Time] => {
+export const getDateAndTimeFromIso = ({ iso }: { iso: string; utc?: boolean }): [Date, Time] => {
 	if (iso.length === 0) return ['', ''];
 
 	const isoDate = new Date(iso);

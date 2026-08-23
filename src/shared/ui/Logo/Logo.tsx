@@ -1,5 +1,4 @@
 import { Icon } from '../Icon';
-import { Label } from '../Label';
 
 export const Logo: React.FC = () => {
 	return (

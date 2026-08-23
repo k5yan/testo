@@ -1,5 +1,4 @@
 import type { ReactNode, CSSProperties } from 'react';
-import { COLORS } from '../../constants/theme';
 
 export type LabelWeight = 'regular' | 'medium' | 'bold';
 

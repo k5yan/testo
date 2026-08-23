@@ -7,6 +7,7 @@ import type React from 'react';
 import type { HomeTablesProps } from './types';
 import type { SelectorProps } from '../../../../shared/ui/Selector/types';
 import styles from './HomeTables.module.scss';
+import { ordersMock } from '../../Orders/mocks/orders';
 
 export const HomeTables: React.FC<HomeTablesProps> = () => {
 	const selectors: Array<SelectorProps> = [
@@ -43,7 +44,7 @@ export const HomeTables: React.FC<HomeTablesProps> = () => {
 		},
 	];
 
-	const FilterButton = ({ text, isSelected }) => {
+	const FilterButton = ({ text, isSelected }: { text: string; isSelected: boolean }) => {
 		return (
 			<Button
 				label={{
@@ -193,7 +194,7 @@ export const HomeTables: React.FC<HomeTablesProps> = () => {
 			</div>
 
 			<div id={'orders-table'} style={{ display: 'flex', flex: 1, alignItems: 'flex-start' }}>
-				<Orders />
+				<Orders orders={ordersMock} />
 			</div>
 
 			<NavigationFooter currentPage={1} numberOfPages={50} />

@@ -72,7 +72,7 @@ export const OrderInfo: React.FC<Order> = (order) => {
 						style={{
 							borderRadius: 6,
 							padding: '5px 10px 5px 10px',
-							backgroundColor: COLORS[`${order.status.color}_HOVER`],
+							backgroundColor: COLORS[`${order?.status?.color}_HOVER` as keyof typeof COLORS],
 						}}
 					>
 						<Label {...labelStyle} color={COLORS[order.status.color]} text={order.status.text} />
