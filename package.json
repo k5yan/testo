@@ -9,7 +9,6 @@
 		"lint": "eslint .",
 		"preview": "vite preview"
 	},
-	"homepage": "https://k5yan.github.io/testo",
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
